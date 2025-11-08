@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Legends - 2D Beat 'Em Up Fighter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="1280" height="720"></canvas>
+        <div id="menu-overlay" class="active">
+            <div id="main-menu">
+                <h1>BATTLE LEGENDS</h1>
+                <div class="menu-buttons">
+                    <button id="btn-single-player">Single Player</button>
+                    <button id="btn-multiplayer">Multiplayer</button>
+                    <button id="btn-character-select">Character Select</button>
+                    <button id="btn-options">Options</button>
+                </div>
+                <div class="version">v0.1.0</div>
+            </div>
+        </div>
+        <div id="hud" style="display: none;">
+            <div id="player-info">
+                <div class="player-portrait"></div>
+                <div class="player-bars">
+                    <div class="hp-bar-container">
+                        <div id="player-hp-bar" class="hp-bar"></div>
+                    </div>
+                    <div class="mp-bar-container">
+                        <div id="player-mp-bar" class="mp-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="timer">90</div>
+            <div id="combo-counter" style="display: none;">
+                <span id="combo-count">0</span> HITS!
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Constants -->
+    <script src="js/utils/constants.js"></script>
+    <script src="js/utils/helpers.js"></script>
+
+    <!-- Systems -->
+    <script src="js/systems/InputManager.js"></script>
+    <script src="js/systems/CollisionManager.js"></script>
+    <script src="js/systems/AnimationManager.js"></script>
+    <script src="js/systems/PhysicsEngine.js"></script>
+    <script src="js/systems/AudioManager.js"></script>
+
+    <!-- Classes -->
+    <script src="js/classes/Character.js"></script>
+    <script src="js/classes/Player.js"></script>
+    <script src="js/classes/Enemy.js"></script>
+    <script src="js/classes/Weapon.js"></script>
+    <script src="js/classes/Projectile.js"></script>
+    <script src="js/classes/Item.js"></script>
+    <script src="js/classes/Stage.js"></script>
+
+    <!-- UI -->
+    <script src="js/ui/MainMenu.js"></script>
+    <script src="js/ui/CharacterSelect.js"></script>
+    <script src="js/ui/HUD.js"></script>
+    <script src="js/ui/PauseMenu.js"></script>
+
+    <!-- Main Game -->
+    <script src="js/main.js"></script>
+</body>
+</html>
