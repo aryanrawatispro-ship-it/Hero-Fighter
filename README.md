@@ -112,6 +112,46 @@ A Hero Fighter-style 2D multiplayer fighting game built with HTML5 Canvas and Ja
 4. Open your browser and navigate to `http://localhost:8000`
 5. Click "Single Player" to start the game
 
+### Deployment
+
+This is a static HTML5 game that can be deployed on any static hosting service:
+
+#### Option 1: Render (Static Site)
+1. Push your code to GitHub
+2. Go to [Render Dashboard](https://dashboard.render.com/)
+3. Click "New" → "Static Site"
+4. Connect your GitHub repository
+5. Render will auto-detect the `render.yaml` configuration
+6. Click "Create Static Site"
+7. Your game will be live at `https://your-app-name.onrender.com`
+
+#### Option 2: Vercel (Recommended for static sites)
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+Or connect your GitHub repo at [vercel.com](https://vercel.com)
+
+#### Option 3: Netlify
+1. Go to [app.netlify.com](https://app.netlify.com)
+2. Drag and drop your project folder
+3. Or connect your GitHub repository
+4. Instant deployment!
+
+#### Option 4: GitHub Pages
+```bash
+# Enable GitHub Pages in repository settings
+# Set source to main branch / root
+
+# Your game will be at:
+# https://yourusername.github.io/Hero-Fighter/
+```
+
+All options are **FREE** for static sites!
+
 ### File Structure
 
 ```
